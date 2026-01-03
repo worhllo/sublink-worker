@@ -2,9 +2,9 @@
   <img src="public/favicon.png" alt="Sublink Worker" width="120" height="120"/>
 
   <h1><b>Sublink Worker</b></h1>
-  <h5><i>One Worker, All Subscriptions</i></h5>
+  <h5><i>一个工具，管理所有订阅</i></h5>
 
-  <p><b>A lightweight subscription converter and manager for proxy protocols, deployable on Cloudflare Workers, Vercel, Node.js, or Docker.</b></p>
+  <p><b>轻量级代理协议订阅转换与管理工具，可部署于 Cloudflare Workers、Vercel、Node.js 或 Docker 环境</b></p>
 
   <a href="https://trendshift.io/repositories/12291" target="_blank">
     <img src="https://trendshift.io/api/badge/repositories/12291" alt="7Sageer%2Fsublink-worker | Trendshift" width="250" height="55"/>
@@ -14,75 +14,75 @@
 
 <p style="display: flex; align-items: center; gap: 10px;">
   <a href="https://deploy.workers.cloudflare.com/?url=https://github.com/7Sageer/sublink-worker">
-    <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers" style="height: 32px;"/>
+    <img src="https://deploy.workers.cloudflare.com/button" alt="部署到 Cloudflare Workers" style="height: 32px;"/>
   </a>
-  <a href="https://vercel.com/new/clone?repository-url=https://github.com/7Sageer/sublink-worker&env=KV_REST_API_URL,KV_REST_API_TOKEN&envDescription=Vercel%20KV%20credentials%20for%20data%20storage&envLink=https://vercel.com/docs/storage/vercel-kv">
-    <img src="https://vercel.com/button" alt="Deploy to Vercel" style="height: 32px;"/>
+  <a href="https://vercel.com/new/clone?repository-url=https://github.com/7Sageer/sublink-worker&env=KV_REST_API_URL,KV_REST_API_TOKEN&envDescription=Vercel%20KV%20数据存储所需凭证&envLink=https://vercel.com/docs/storage/vercel-kv">
+    <img src="https://vercel.com/button" alt="部署到 Vercel" style="height: 32px;"/>
   </a>
 </p>
 
-  <h3>📚 Documentation</h3>
+  <h3>📚 文档资源</h3>
   <p>
-    <a href="https://app.sublink.works"><b>⚡ Live Demo</b></a> ·
-    <a href="https://sublink.works/en/"><b>Documentation</b></a> 
-    <a href="https://sublink.works"><b>中文文档</b></a>·
+    <a href="https://app.sublink.works"><b>⚡ 在线演示</b></a> ·
+    <a href="https://sublink.works/en/"><b>英文文档</b></a> ·
+    <a href="https://sublink.works"><b>中文文档</b></a>
   </p>
   <p>
-    <a href="https://sublink.works/guide/quick-start/">Quick Start</a> ·
-    <a href="https://sublink.works/api/">API Reference</a> ·
-    <a href="https://sublink.works/guide/faq/">FAQ</a>
+    <a href="https://sublink.works/guide/quick-start/">快速开始</a> ·
+    <a href="https://sublink.works/api/">API 参考</a> ·
+    <a href="https://sublink.works/guide/faq/">常见问题</a>
   </p>
 </div>
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-### One-Click Deployment
-- Choose a "deploy" button above to click
-- That's it! See the [Document](https://sublink.works/guide/quick-start/) for more information.
+### 一键部署
+- 点击上方任意一个「部署」按钮
+- 完成！更多详情请查看 [文档](https://sublink.works/guide/quick-start/)
 
-### Alternative Runtimes
+### 其他运行环境
 - **Node.js**: `npm run build:node && node dist/node-server.cjs`
-- **Vercel**: `vercel deploy` (configure KV in project settings)
+- **Vercel**: `vercel deploy`（需在项目设置中配置 KV 存储）
 - **Docker**: `docker pull ghcr.io/7sageer/sublink-worker:latest`
-- **Docker Compose**: `docker compose up -d` (includes Redis)
+- **Docker Compose**: `docker compose up -d`（包含 Redis 依赖）
 
-## ✨ Features
+## ✨ 核心功能
 
-### Supported Protocols
-ShadowSocks • VMess • VLESS • Hysteria2 • Trojan • TUIC
+### 支持协议
+影梭（ShadowSocks）• VMess • VLESS • Hysteria2 • 特洛伊（Trojan）• TUIC
 
-### Client Support
+### 客户端支持
 Sing-Box • Clash • Xray/V2Ray • Surge
 
-### Input Support
-- Base64 subscriptions
-- HTTP/HTTPS subscriptions
-- Full configs (Sing-Box JSON, Clash YAML, Surge INI)
+### 输入支持
+- Base64 编码订阅链接
+- HTTP/HTTPS 订阅链接
+- 完整配置文件（Sing-Box JSON、Clash YAML、Surge INI）
 
-### Core Capabilities
-- Import subscriptions from multiple sources
-- Generate fixed/random short links (KV-based)
-- Light/Dark theme toggle
-- Flexible API for script automation
-- Multi-language support (Chinese, English, Persian, Russian)
-- Web interface with predefined rule sets and customizable policy groups
+### 核心能力
+- 多来源订阅导入
+- 生成固定/随机短链接（基于 KV 存储）
+- 明暗主题切换
+- 灵活 API 支持脚本自动化
+- 多语言支持（中文、英文、波斯语、俄语）
+- 网页管理界面（含预设规则集与可自定义策略组）
 
-## 🤝 Contributing
+## 🤝 贡献指南
 
-Issues and Pull Requests are welcome to improve this project.
+欢迎通过 Issues 提交问题反馈或 Pull Requests 参与项目改进。
 
-## 📄 License
+## 📄 许可证
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+本项目基于 MIT 许可证开源 - 详见 [LICENSE](LICENSE) 文件。
 
-## ⚠️ Disclaimer
+## ⚠️ 免责声明
 
-This project is for learning and exchange purposes only. Please do not use it for illegal purposes. All consequences resulting from the use of this project are solely the responsibility of the user and are not related to the developer.
+本项目仅用于学习交流，请勿用于非法用途。使用本项目产生的一切后果由用户自行承担，与开发者无关。
 
-## 💰 Sponsorship
+## 💰 赞助支持
 
 <div align="center">
-  <h3>Thanks to the following sponsors for their support of this project</h3>
+  <h3>感谢以下赞助商对本项目的支持</h3>
 <table border="0">
   <tr>
     <td>
@@ -97,17 +97,17 @@ This project is for learning and exchange purposes only. Please do not use it fo
     </td>
   </tr>
 </table>
-  <p>If you would like to sponsor this project, please contact the developer <a href="https://github.com/7Sageer" style="text-decoration: none;">@7Sageer</a></p>
+  <p>若您希望赞助本项目，请联系开发者 <a href="https://github.com/7Sageer" style="text-decoration: none;">@7Sageer</a></p>
 </div>
 
-## ⭐ Star History
+## ⭐ 星标历史
 
-Thanks to everyone who has starred this project! 🌟
+感谢所有给本项目点亮星标的朋友！🌟
 
 <a href="https://star-history.com/#7Sageer/sublink-worker&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=7Sageer/sublink-worker&type=Date&theme=dark" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=7Sageer/sublink-worker&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=7Sageer/sublink-worker&type=Date" />
+   <img alt="星标历史图表" src="https://api.star-history.com/svg?repos=7Sageer/sublink-worker&type=Date" />
  </picture>
 </a>
